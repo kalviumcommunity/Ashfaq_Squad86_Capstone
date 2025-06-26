@@ -13,5 +13,5 @@ This project is a complete travel UI platform powered by a conversational AI ass
 **Day 3-9:** Designing 150+ high-fidelity UI screens  
 **Day 10-12:** Prototyping the interactive flows in Figma  
 **Day 13-14:** Testing user experience, fixing design bugs  
-**Day 15:** Finalizing and linking all UI components
+**Day 15:** Finalizing and linking all UI componentes
 
