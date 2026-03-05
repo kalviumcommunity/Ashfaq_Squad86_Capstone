@@ -1,10 +1,10 @@
-export async function GET() {
-  const destinations = [
-    { id: 1, name: "Kashmir", country: "India" },
-    { id: 2, name: "Paris", country: "France" },
-    { id: 3, name: "Bali", country: "Indonesia" },
-    { id: 4, name: "Maldives", country: "Maldives" }
-  ];
+import { NextResponse } from "next/server";
 
-  return Response.json(destinations);
+export async function POST(request) {
+  const body = await request.json();
+
+  return NextResponse.json({
+    message: "Destination added successfully",
+    data: body
+  });
 }
