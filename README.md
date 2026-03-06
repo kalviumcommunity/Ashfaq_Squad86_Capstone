@@ -15,3 +15,4 @@ This project is a complete travel UI platform powered by a conversational AI ass
 **Day 13-14:** Testing user experience, fixing design bugs  
 **Day 15:** Finalizing and linking all UI components
 
+https://ashfaq-squad86-capstone.onrender.com
