@@ -1,19 +1,26 @@
 import { NextResponse } from "next/server";
+import { connectDB } from "@/lib/db";
+import Destination from "@/models/Destination";
 
-export async function POST(request) {
-  const body = await request.json();
+// READ data
+export async function GET() {
+  await connectDB();
 
-  return NextResponse.json({
-    message: "Destination added successfully",
-    data: body
-  });
+  const destinations = await Destination.find();
+
+  return NextResponse.json(destinations);
 }
 
-export async function PUT(request) {
+// WRITE data
+export async function POST(request) {
+  await connectDB();
+
   const body = await request.json();
 
+  const newDestination = await Destination.create(body);
+
   return NextResponse.json({
-    message: "Destination updated successfully",
-    updatedData: body
+    message: "Destination saved successfully",
+    data: newDestination
   });
 }
